@@ -1,4 +1,12 @@
 {
+	"author": {
+		"email": "Land@Playform.Cloud",
+		"name": "Land",
+		"url": "HTTPS://Land.Playform.Cloud"
+	},
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/TauriWebpack/issues"
+	},
 	"contributors": [
 		"Tauri Team <team@tauri-apps.org> (https://tauri-apps.org)",
 		"Lucas Fernandes Gonçalves Nogueira <lucas@quasar.dev>",
@@ -10,6 +18,7 @@
 	"description": "Webpack configuration for Tauri.",
 	"devDependencies": {
 		"@playform/build": "0.0.7",
+		"@playform/document": "0.0.6",
 		"dotenv": "16.4.5",
 		"lint-staged": "15.2.2",
 		"lockfile-lint": "4.13.2",
@@ -19,20 +28,32 @@
 		"type": "opencollective",
 		"url": "https://opencollective.com/tauri"
 	},
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/TauriWebpack#readme",
 	"husky": {
 		"hooks": {
 			"pre-commit": "lint-staged"
 		}
 	},
+	"license": "SEE LICENSE IN LICENSE",
 	"lint-staged": [
 		"eslint --fix",
 		"git add"
 	],
 	"main": "index.js",
 	"name": "@tauri-apps/tauri-webpack",
+	"private": false,
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/TauriWebpack.git"
+	},
 	"scripts": {
 		"Document": "Document 'Source/**/*.ts'",
 		"lint:lockfile": "lockfile-lint --path yarn.lock --type yarn --validate-https --allowed-hosts npm yarn",
 		"prepublishOnly": "Build 'Source/**/*.ts'"
-	}
+	},
+	"type": "module",
+	"version": "0.0.1"
 }
