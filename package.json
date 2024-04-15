@@ -43,7 +43,7 @@
 		"git add"
 	],
 	"dependencies": {
-		"tauri": "^0.3.0"
+		"tauri": "0.3.0"
 	},
 	"devDependencies": {
 		"@playform/build": "0.0.5",
