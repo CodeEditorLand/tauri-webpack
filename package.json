@@ -1,37 +1,23 @@
 {
-	"name": "@tauri-apps/tauri-webpack",
-	"version": "0.0.1",
-	"private": false,
-	"description": "Webpack configuration for Tauri.",
-	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/TauriWebpack#readme",
-	"bugs": {
-		"url": "HTTPS://GitHub.Com/CodeEditorLand/TauriWebpack/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+HTTPS://github.com/CodeEditorLand/TauriWebpack.git"
-	},
-	"funding": {
-		"type": "opencollective",
-		"url": "https://opencollective.com/tauri"
-	},
-	"license": "SEE LICENSE IN LICENSE",
-	"author": {
-		"name": "Land",
-		"email": "Land@Playform.Cloud",
-		"url": "HTTPS://Land.Playform.Cloud"
-	},
 	"contributors": [
 		"Tauri Team <team@tauri-apps.org> (https://tauri-apps.org)",
 		"Lucas Fernandes Gonçalves Nogueira <lucas@quasar.dev>",
 		"Daniel Thompson-Yvetot <denjell@sfosc.org>"
 	],
-	"type": "module",
-	"main": "index.js",
-	"scripts": {
-		"Document": "Document 'Source/**/*.ts'",
-		"lint:lockfile": "lockfile-lint --path yarn.lock --type yarn --validate-https --allowed-hosts npm yarn",
-		"prepublishOnly": "Build 'Source/**/*.ts'"
+	"dependencies": {
+		"tauri": "0.15.0"
+	},
+	"description": "Webpack configuration for Tauri.",
+	"devDependencies": {
+		"@playform/build": "0.0.7",
+		"dotenv": "16.4.5",
+		"lint-staged": "15.2.2",
+		"lockfile-lint": "4.13.2",
+		"promise": "8.3.0"
+	},
+	"funding": {
+		"type": "opencollective",
+		"url": "https://opencollective.com/tauri"
 	},
 	"husky": {
 		"hooks": {
@@ -42,18 +28,11 @@
 		"eslint --fix",
 		"git add"
 	],
-	"dependencies": {
-		"tauri": "0.15.0"
-	},
-	"devDependencies": {
-		"@playform/build": "0.0.7",
-		"@playform/document": "0.0.6",
-		"dotenv": "16.4.5",
-		"lint-staged": "15.2.2",
-		"lockfile-lint": "4.13.2",
-		"promise": "8.3.0"
-	},
-	"publishConfig": {
-		"access": "public"
+	"main": "index.js",
+	"name": "@tauri-apps/tauri-webpack",
+	"scripts": {
+		"Document": "Document 'Source/**/*.ts'",
+		"lint:lockfile": "lockfile-lint --path yarn.lock --type yarn --validate-https --allowed-hosts npm yarn",
+		"prepublishOnly": "Build 'Source/**/*.ts'"
 	}
 }
