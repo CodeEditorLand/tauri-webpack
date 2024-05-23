@@ -28,7 +28,7 @@
 	},
 	"devDependencies": {
 		"dotenv": "16.4.5",
-		"lint-staged": "15.2.2",
+		"lint-staged": "15.2.4",
 		"lockfile-lint": "4.13.2",
 		"promise": "8.3.0"
 	}
