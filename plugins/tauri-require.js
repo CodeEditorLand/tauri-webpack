@@ -3,10 +3,12 @@
  * @description Webpack tool for loading chunks in tauri
  */
 module.exports.plugin = class TauriRequirePlugin {
-  apply (compiler) {
-    compiler.plugin('compilation', function (compilation) {
-      compilation.mainTemplate.hooks.requireEnsure.tap('JsonpMainTemplatePlugin load', (source, chunk, hash) => {
-        return `
+	apply(compiler) {
+		compiler.plugin("compilation", (compilation) => {
+			compilation.mainTemplate.hooks.requireEnsure.tap(
+				"JsonpMainTemplatePlugin load",
+				(source, chunk, hash) => {
+					return `
           // Tauri chunk loading
 
           var installedChunkData = installedChunks[chunkId];
@@ -54,8 +56,9 @@ module.exports.plugin = class TauriRequirePlugin {
                 });
               }
             }
-        `
-      })
-    })
-  }
-}
+        `;
+				},
+			);
+		});
+	}
+};

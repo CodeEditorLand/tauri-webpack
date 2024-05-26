@@ -19,10 +19,7 @@
 			"pre-commit": "lint-staged"
 		}
 	},
-	"lint-staged": [
-		"eslint --fix",
-		"git add"
-	],
+	"lint-staged": ["eslint --fix", "git add"],
 	"dependencies": {
 		"tauri": "0.15.0"
 	},
