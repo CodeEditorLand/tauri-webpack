@@ -24,12 +24,12 @@
 		"git add"
 	],
 	"dependencies": {
-		"tauri": "^0.3.0"
+		"tauri": "^0.15.0"
 	},
 	"devDependencies": {
-		"dotenv": "8.2.0",
-		"lint-staged": "9.5.0",
-		"lockfile-lint": "3.0.5",
-		"promise": "8.0.3"
+		"dotenv": "16.4.5",
+		"lint-staged": "15.2.5",
+		"lockfile-lint": "4.13.2",
+		"promise": "8.3.0"
 	}
 }
