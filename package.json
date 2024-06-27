@@ -24,7 +24,7 @@
 		"git add"
 	],
 	"dependencies": {
-		"tauri": "^0.15.0"
+		"tauri": "0.15.0"
 	},
 	"devDependencies": {
 		"dotenv": "16.4.5",
