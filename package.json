@@ -5,7 +5,7 @@
 		"Daniel Thompson-Yvetot <denjell@sfosc.org>"
 	],
 	"dependencies": {
-		"tauri": "^0.3.0"
+		"tauri": "0.3.0"
 	},
 	"description": "Webpack configuration for Tauri.",
 	"devDependencies": {
