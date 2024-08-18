@@ -10,7 +10,7 @@
 	"description": "Webpack configuration for Tauri.",
 	"devDependencies": {
 		"dotenv": "16.4.5",
-		"lint-staged": "15.2.7",
+		"lint-staged": "15.2.9",
 		"lockfile-lint": "4.14.0",
 		"promise": "8.3.0"
 	},
