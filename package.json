@@ -10,9 +10,25 @@
 		"Lucas Fernandes Gonçalves Nogueira <lucas@quasar.dev>",
 		"Daniel Thompson-Yvetot <denjell@sfosc.org>"
 	],
+<<<<<<< HEAD
 	"main": "index.js",
 	"scripts": {
 		"lint:lockfile": "lockfile-lint --path yarn.lock --type yarn --validate-https --allowed-hosts npm yarn"
+=======
+	"dependencies": {
+		"tauri": "0.15.0"
+	},
+	"description": "Webpack configuration for Tauri.",
+	"devDependencies": {
+		"dotenv": "16.4.5",
+		"lint-staged": "15.2.10",
+		"lockfile-lint": "4.14.0",
+		"promise": "8.3.0"
+	},
+	"funding": {
+		"type": "opencollective",
+		"url": "https://opencollective.com/tauri"
+>>>>>>> daf8923c9235bfc38d040252da463fce4cd3c216
 	},
 	"husky": {
 		"hooks": {
