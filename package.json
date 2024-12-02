@@ -18,11 +18,6 @@
 		"type": "opencollective",
 		"url": "https://opencollective.com/tauri"
 	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
 	"lint-staged": [
 		"eslint --fix",
 		"git add"
