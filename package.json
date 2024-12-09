@@ -23,7 +23,7 @@
 		"git add"
 	],
 	"main": "index.js",
-	"name": "@tauri-apps/tauri-webpack",
+	"name": "@codeeditorland/tauri-webpack",
 	"scripts": {
 		"lint:lockfile": "lockfile-lint --path yarn.lock --type yarn --validate-https --allowed-hosts npm yarn"
 	}
